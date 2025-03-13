@@ -1,0 +1,46 @@
+.mainHeader {
+  text-align: center;
+  padding: 20px;
+  color: rgb(21, 120, 138);
+}
+
+.mainSubHeader{
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar{
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.aboutSection{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.projectSectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.projectSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contactSection{
+  padding-left: 20%;
+  padding-bottom: 5%;
+}
+
+.projectCard{
+  margin-left: 10px;
+  margin-right: 10px;
+}

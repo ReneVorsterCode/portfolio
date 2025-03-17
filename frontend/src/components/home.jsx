@@ -47,17 +47,18 @@ export default function Home() {
       </div>
 
       <h3 className="projectSectionHeader">
-        {"<"}Projects{">"}
+        {"<"}Project Showcase{">"}
       </h3>
       <div className="projectSection sectionSharedProps">
         <Row>
           <Card className="projectCard" style={{ width: "18rem" }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title>Polony Sandwhich Todo</Card.Title>
+              <Card.Title>JWT Auth Todo</Card.Title>
               <Card.Text>
-                A todo app that allows user registration, login, and creates
-                todo items that look like polony sandwhiches.
+                A todo app that allows user registration, login, and utilises
+                JWT as middleware to authenticate user CRUD actions for their
+                set of todo-list items.
               </Card.Text>
               <Button variant="primary">View GitHub</Button>
               <Button variant="primary">Test Project</Button>
@@ -139,39 +140,25 @@ export default function Home() {
           <Card className="projectCard" style={{ width: "18rem" }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
-              <Card.Title>Multi-page Storefront</Card.Title>
+              <Card.Title>Multi-Page Storefront</Card.Title>
               <Card.Text>
-                Web app that utilises BrowserRouter to create a multipage
-                storefront where users can register and log in, as well as
-                browse a storefront and add/remove items to/from a cart.
+                Pure frontend React.js app that utilises BrowserRouter and
+                Redux.js to create a multi-page storefront where users can
+                register and log in, as well as browse a storefront and
+                add/remove items to/from a cart.
               </Card.Text>
               <Button variant="primary">View GitHub</Button>
               <Button variant="primary">Test Project</Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>MERN Stack: </i>
+                <i>Frontend Only: </i>
                 <img
                   src="https://img.icons8.com/color/512/javascript.png"
                   width={25}
                   height={25}
                 ></img>
                 <img
-                  src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
                   src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
                   width={25}
                   height={25}
                 ></img>
@@ -184,7 +171,7 @@ export default function Home() {
             <Card.Body>
               <Card.Title>DMTools</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
-                <i>Please note this is an in-progress personal project</i>
+                <i>Please note this is an in-progress hobby project</i>
               </Card.Subtitle>
               <Card.Text>
                 A tool I built for myself to help me run my Dungeons & Dragons

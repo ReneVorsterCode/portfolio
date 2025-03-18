@@ -60,11 +60,21 @@ export default function Home() {
                 JWT as middleware to authenticate user CRUD actions for their
                 set of todo-list items.
               </Card.Text>
-              <Button variant="primary">View GitHub</Button>
+              <Button
+                variant="primary"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/ReneVorsterCode/fullstack-todo",
+                    "_blank"
+                  )
+                }
+              >
+                View GitHub
+              </Button>
               <Button variant="primary">Test Project</Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>MERN Stack: </i>
+                <i>Tech Stack: </i>
                 <img
                   src="https://img.icons8.com/color/512/javascript.png"
                   width={25}
@@ -103,18 +113,23 @@ export default function Home() {
                 register and create a favourites list from the iTunes Media
                 Library.
               </Card.Text>
-              <Button variant="primary">View GitHub</Button>
+              <Button
+                variant="primary"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/ReneVorsterCode/itunes-media-search",
+                    "_blank"
+                  )
+                }
+              >
+                View GitHub
+              </Button>
               <Button variant="primary">Test Project</Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>MERN Stack: </i>
+                <i>Tech Stack: </i>
                 <img
                   src="https://img.icons8.com/color/512/javascript.png"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
                   width={25}
                   height={25}
                 ></img>
@@ -147,11 +162,31 @@ export default function Home() {
                 register and log in, as well as browse a storefront and
                 add/remove items to/from a cart.
               </Card.Text>
-              <Button variant="primary">View GitHub</Button>
-              <Button variant="primary">Test Project</Button>
+              <Button
+                variant="primary"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/ReneVorsterCode/GalleryExpedio.com",
+                    "_blank"
+                  )
+                }
+              >
+                View GitHub
+              </Button>
+              <Button
+                variant="primary"
+                onClick={() =>
+                  window.open(
+                    "https://galleryexpedio-com.onrender.com",
+                    "_blank"
+                  )
+                }
+              >
+                Test Project
+              </Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>Frontend Only: </i>
+                <i>Tech Stack: </i>
                 <img
                   src="https://img.icons8.com/color/512/javascript.png"
                   width={25}
@@ -181,7 +216,7 @@ export default function Home() {
               <Button variant="primary">Test Project</Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>PERN Stack: </i>
+                <i>Tech Stack: </i>
                 <img
                   src="https://img.icons8.com/color/512/javascript.png"
                   width={25}

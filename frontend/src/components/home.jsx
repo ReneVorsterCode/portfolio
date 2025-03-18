@@ -1,9 +1,9 @@
-import Nav from "react-bootstrap/Nav";
-import Row from "react-bootstrap/Row";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+import Nav from "react-bootstrap/esm/Nav";
+import Row from "react-bootstrap/esm/Row";
+import Navbar from "react-bootstrap/esm/Navbar";
+import Container from "react-bootstrap/esm/Container";
+import Card from "react-bootstrap/esm/Card";
+import Button from "react-bootstrap/esm/Button";
 
 export default function Home() {
   return (

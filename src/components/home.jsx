@@ -52,7 +52,6 @@ export default function Home() {
       <div className="projectSection sectionSharedProps">
         <Row>
           <Card className="projectCard" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>JWT Auth Todo</Card.Title>
               <Card.Text>
@@ -71,7 +70,7 @@ export default function Home() {
               >
                 View GitHub
               </Button>
-              <Button variant="primary">Test Project</Button>
+              <Button variant="danger">In Progress</Button>
               <Card.Subtitle>
                 <hr></hr>
                 <i>Tech Stack: </i>
@@ -105,7 +104,6 @@ export default function Home() {
           </Card>
 
           <Card className="projectCard" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>iTunes Media Library Manager</Card.Title>
               <Card.Text>
@@ -124,7 +122,12 @@ export default function Home() {
               >
                 View GitHub
               </Button>
-              <Button variant="primary">Test Project</Button>
+              <Button
+                variant="primary"
+                onClick={() => window.open("http://13.53.126.194", "_blank")}
+              >
+                Test Project
+              </Button>
               <Card.Subtitle>
                 <hr></hr>
                 <i>Tech Stack: </i>
@@ -153,7 +156,6 @@ export default function Home() {
           </Card>
 
           <Card className="projectCard" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>Multi-Page Storefront</Card.Title>
               <Card.Text>
@@ -202,7 +204,6 @@ export default function Home() {
           </Card>
 
           <Card className="projectCard" style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
               <Card.Title>DMTools</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
@@ -212,8 +213,8 @@ export default function Home() {
                 A tool I built for myself to help me run my Dungeons & Dragons
                 games. Uses a relational database and local storage.
               </Card.Text>
-              <Button variant="primary">View GitHub</Button>
-              <Button variant="primary">Test Project</Button>
+              <Button variant="danger">In Progress</Button>
+              <Button variant="danger">In Progress</Button>
               <Card.Subtitle>
                 <hr></hr>
                 <i>Tech Stack: </i>

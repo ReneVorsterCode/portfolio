@@ -70,7 +70,14 @@ export default function Home() {
               >
                 View GitHub
               </Button>
-              <Button variant="danger">In Progress</Button>
+              <Button
+                variant="primary"
+                onClick={() =>
+                  window.open("http://13.53.126.194:5000/", "_blank")
+                }
+              >
+                In Progress
+              </Button>
               <Card.Subtitle>
                 <hr></hr>
                 <i>Tech Stack: </i>
@@ -207,13 +214,15 @@ export default function Home() {
             <Card.Body>
               <Card.Title>DMTools</Card.Title>
               <Card.Subtitle className="mb-2 text-muted">
-                <i>Please note this is an in-progress hobby project</i>
+                <i>
+                  Please note this is an in-progress hobby project and as such I
+                  will likely not make the code public.
+                </i>
               </Card.Subtitle>
               <Card.Text>
                 A tool I built for myself to help me run my Dungeons & Dragons
                 games. Uses a relational database and local storage.
               </Card.Text>
-              <Button variant="danger">In Progress</Button>
               <Button variant="danger">In Progress</Button>
               <Card.Subtitle>
                 <hr></hr>

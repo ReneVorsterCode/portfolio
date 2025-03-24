@@ -57,7 +57,7 @@ export default function Home() {
               <Card.Text>
                 A todo app that allows user registration, login, and utilises
                 JWT as middleware to authenticate user CRUD actions for their
-                set of todo-list items.
+                set of todo-list items. Hosted on AWS EC2 instance.
               </Card.Text>
               <Button
                 variant="primary"
@@ -76,7 +76,7 @@ export default function Home() {
                   window.open("http://13.53.126.194:5000/", "_blank")
                 }
               >
-                In Progress
+                Test Project
               </Button>
               <Card.Subtitle>
                 <hr></hr>
@@ -106,6 +106,11 @@ export default function Home() {
                   width={25}
                   height={25}
                 ></img>
+                <img
+                  src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
+                  width={25}
+                  height={25}
+                ></img>
               </Card.Subtitle>
             </Card.Body>
           </Card>
@@ -116,7 +121,7 @@ export default function Home() {
               <Card.Text>
                 A project focused on API interaction that allows users to
                 register and create a favourites list from the iTunes Media
-                Library.
+                Library. Hosted on AWS EC2 instance.
               </Card.Text>
               <Button
                 variant="primary"
@@ -155,6 +160,11 @@ export default function Home() {
                 ></img>
                 <img
                   src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+                  width={25}
+                  height={25}
+                ></img>
+                <img
+                  src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
                   width={25}
                   height={25}
                 ></img>
@@ -203,6 +213,11 @@ export default function Home() {
                 ></img>
                 <img
                   src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
+                  width={25}
+                  height={25}
+                ></img>
+                <img
+                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
                   width={25}
                   height={25}
                 ></img>

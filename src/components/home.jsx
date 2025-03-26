@@ -20,8 +20,8 @@ export default function Home() {
           <Container>
             <Nav className="me-auto">
               <Navbar.Brand href="#home">{"{R.V}"}</Navbar.Brand>
-              <Nav.Link href="#aboutSection">Projects</Nav.Link>
-              <Nav.Link href="#contactSection">Contact</Nav.Link>
+              {/* <Nav.Link href="#aboutSection">Projects</Nav.Link>
+              <Nav.Link href="#contactSection">Contact</Nav.Link> */}
             </Nav>
           </Container>
         </Navbar>

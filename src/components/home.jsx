@@ -73,7 +73,7 @@ export default function Home() {
               <Button
                 variant="primary"
                 onClick={() =>
-                  window.open("http://13.53.126.194:5000/", "_blank")
+                  window.open("https://todoapp.renev-dev.site/", "_blank")
                 }
               >
                 Test Project
@@ -136,7 +136,9 @@ export default function Home() {
               </Button>
               <Button
                 variant="primary"
-                onClick={() => window.open("http://13.53.126.194", "_blank")}
+                onClick={() =>
+                  window.open("https://itunesapp.renev-dev.site/", "_blank")
+                }
               >
                 Test Project
               </Button>

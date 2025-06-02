@@ -8,7 +8,7 @@
   }
 }
 
-:root {
+.dark-mode {
   --background-color: #ffffff;
   /* Default light mode background */
   --text-color: #000000;
@@ -24,11 +24,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.dark-mode {
+:root {
   --background-color: #002235;
-  /* Dark mode background */
+  /* Default Dark mode background */
   --text-color: #d8fffd;
-  /* Dark mode text color */
+  /* Default Dark mode text color */
   --navbar-background-colour: #1ba3fd;
 }
 

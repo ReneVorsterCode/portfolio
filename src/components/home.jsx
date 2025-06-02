@@ -8,14 +8,14 @@ import cvPhoto from "../assets/cvphoto.jpg";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
     if (!isDarkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
       document.body.classList.remove("dark-mode");
+    } else {
+      document.body.classList.add("dark-mode");
     }
   };
 
@@ -138,19 +138,11 @@ export default function Home() {
               borderRadius: "5px",
             }}
           >
-            {isDarkMode ? (
-              <img
-                src="https://img.icons8.com/?size=100&id=5Yjf1lCjbLsy&format=png&color=000000"
-                width={25}
-                height={25}
-              ></img>
-            ) : (
-              <img
-                src="https://img.icons8.com/?size=100&id=5Yjf1lCjbLsy&format=png&color=000000"
-                width={25}
-                height={25}
-              ></img>
-            )}
+            <img
+              src="https://img.icons8.com/?size=100&id=5Yjf1lCjbLsy&format=png&color=000000"
+              width={25}
+              height={25}
+            ></img>
           </button>
           <p id="mainSubHeader" className="mainSubHeader">
             // Junior Full Stack Web Developer
@@ -282,7 +274,13 @@ export default function Home() {
       </h3>
       <div className="projectSection sectionSharedProps">
         <Row>
-          <Card className="projectCard" style={{ width: "18rem" }}>
+          <Card
+            className="projectCard"
+            style={{ width: "18rem" }}
+            bg={isDarkMode ? "dark" : "light"}
+            text={isDarkMode ? "white" : "dark"}
+            border={isDarkMode ? "info" : "primary"}
+          >
             <Card.Body>
               <Card.Title>JWT Auth Todo</Card.Title>
               <Card.Text>
@@ -311,42 +309,57 @@ export default function Home() {
               </Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>Tech Stack: </i>
-                <img
-                  src="https://img.icons8.com/color/512/javascript.png"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
+                <div
+                  className="techStackBox"
+                  style={{
+                    backgroundColor: isDarkMode ? "#65d1fc" : "transparent", // Gray box in dark mode
+                    borderRadius: "5px", // Optional: Rounded corners
+                    padding: "10px", // Optional: Add padding for spacing
+                  }}
+                >
+                  <i>Tech Stack: </i>
+                  <img
+                    src="https://img.icons8.com/color/512/javascript.png"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                </div>
               </Card.Subtitle>
             </Card.Body>
           </Card>
 
-          <Card className="projectCard" style={{ width: "18rem" }}>
+          <Card
+            className="projectCard"
+            style={{ width: "18rem" }}
+            bg={isDarkMode ? "dark" : "light"}
+            text={isDarkMode ? "white" : "dark"}
+            border={isDarkMode ? "info" : "primary"}
+          >
             <Card.Body>
               <Card.Title>iTunes Media Library Manager</Card.Title>
               <Card.Text>
@@ -375,37 +388,52 @@ export default function Home() {
               </Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>Tech Stack: </i>
-                <img
-                  src="https://img.icons8.com/color/512/javascript.png"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
+                <div
+                  className="techStackBox"
+                  style={{
+                    backgroundColor: isDarkMode ? "#65d1fc" : "transparent", // Gray box in dark mode
+                    borderRadius: "5px", // Optional: Rounded corners
+                    padding: "10px", // Optional: Add padding for spacing
+                  }}
+                >
+                  <i>Tech Stack: </i>
+                  <img
+                    src="https://img.icons8.com/color/512/javascript.png"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                </div>
               </Card.Subtitle>
             </Card.Body>
           </Card>
 
-          <Card className="projectCard" style={{ width: "18rem" }}>
+          <Card
+            className="projectCard"
+            style={{ width: "18rem" }}
+            bg={isDarkMode ? "dark" : "light"}
+            text={isDarkMode ? "white" : "dark"}
+            border={isDarkMode ? "info" : "primary"}
+          >
             <Card.Body>
               <Card.Title>Multi-Page Storefront</Card.Title>
               <Card.Text>
@@ -438,30 +466,47 @@ export default function Home() {
               </Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>Tech Stack: </i>
-                <img
-                  src="https://img.icons8.com/color/512/javascript.png"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
+                <div
+                  className="techStackBox"
+                  style={{
+                    backgroundColor: isDarkMode ? "#65d1fc" : "transparent", // Gray box in dark mode
+                    borderRadius: "5px", // Optional: Rounded corners
+                    padding: "10px", // Optional: Add padding for spacing
+                  }}
+                >
+                  <i>Tech Stack: </i>
+                  <img
+                    src="https://img.icons8.com/color/512/javascript.png"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                </div>
               </Card.Subtitle>
             </Card.Body>
           </Card>
 
-          <Card className="projectCard" style={{ width: "18rem" }}>
+          <Card
+            className="projectCard"
+            style={{ width: "18rem" }}
+            bg={isDarkMode ? "dark" : "light"}
+            text={isDarkMode ? "white" : "dark"}
+            border={isDarkMode ? "info" : "primary"}
+          >
             <Card.Body>
               <Card.Title>DMTools</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">
+              <Card.Subtitle
+                className={`mb-2 ${isDarkMode ? "text-white" : "text-muted"}`}
+              >
                 <i>
                   Please note this is an in-progress hobby project and as such I
                   will likely not make the code public.
@@ -474,32 +519,41 @@ export default function Home() {
               <Button variant="danger">In Progress</Button>
               <Card.Subtitle>
                 <hr></hr>
-                <i>Tech Stack: </i>
-                <img
-                  src="https://img.icons8.com/color/512/javascript.png"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
-                <img
-                  src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
-                  width={25}
-                  height={25}
-                ></img>
+                <div
+                  className="techStackBox"
+                  style={{
+                    backgroundColor: isDarkMode ? "#65d1fc" : "transparent", // Gray box in dark mode
+                    borderRadius: "5px", // Optional: Rounded corners
+                    padding: "10px", // Optional: Add padding for spacing
+                  }}
+                >
+                  <i>Tech Stack: </i>
+                  <img
+                    src="https://img.icons8.com/color/512/javascript.png"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=38561&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=kg46nzoJrmTR&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=NfbyHexzVEDk&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000"
+                    width={25}
+                    height={25}
+                  ></img>
+                </div>
               </Card.Subtitle>
             </Card.Body>
           </Card>
